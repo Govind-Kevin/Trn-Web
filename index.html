@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="icon" href="fav.png" type="image/gif" sizes="16x16">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Trainocate</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="js/trn.js"></script>
+
+</head>
+<body >
+	
+<div id="particles-js">
+      <div class="wrapper" id="wrapper">
+            <header>
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        
+
+                        <div class="menu" id="menu">
+                              <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">What We Do?</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+							<div class="logo">
+
+                              <div class="random">
+                              	<span class="nbr ltr">0</span>
+                              	<span class="nbr ltr">0</span>
+                              	<span class="nbr ltr">0</span>
+                              	<span class="nbr ltr">0</span>
+                              	<span class="nbr ltr">0</span>
+                              	<span class="nbr ltr">0</span>
+                              	<span class="nbr ltr">0</span>
+                              	<span class="nbr ltr">0</span>
+                              	<span class="nbr ltr">0</span>
+                              	<span class="nbr ltr">0</span>
+                              </div>
+                        </div>
+            </header>
+                                 <!------Home Page ----------------->
+            		<section id="home">
+            	 <div class="slideshow-container">
+            <div class="mySlides fade">
+  <img src="images/slide1.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="images/slide2.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="images/slide3.png" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+<br>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+                      <!--------Login=-->
+                                        <center>
+                      	<button  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> &nbsp<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+</center>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="btu" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+    	<!------Sing up--->
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot Password?</a></span>
+    </div>
+  </form>
+</div>
+<div id="id02" class="modal1">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal1-content" action="">
+    <div class="container1">
+      <h1>Register Here</h1>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw1"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="canclbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+ 
+        </section>
+        <section id="about">
+        	<div class="why">
+        		<h1 class="tp">What we do</h1>
+        		<ul class="w">
+        			<li>
+        				  We serve customers around the world uniquely set us apart from our competitors. Professionals worldwide trust us to deliver superior courses and certification preparation with excellent curriculum, hands-on labs, and experienced instructors.
+        			</li>
+        			<li>Our courseware is based on an award-winning instructional design methodology that promotes rapid skills development in a highly effective and systematic manner. </li>
+        			<li>No other training provider is as dedicated as we are in providing you the best and complete training experience.</li>
+        		</ul>
+        		<h2 class="w1">Our Network Covers Major Countries</h2>
+        		<ol class="l1">
+        			<li>India</li>
+        			<li>Indonesia</li>
+        			<li>Malaysia</li>
+        			<li>Singapore</li>
+        			<li>Japan</li>
+        			<li>China</li>
+        			<li>Thailand</li>
+        			<li>Vietnam</li>
+        			<li>Korea</li>
+        		</ol>
+        	</div>
+        </section>
+        <!------------------Contact Page -------------------->
+        <section id="contact">
+        	<div class="media">
+        		<h1 class="tp1">Contact Us</h1>
+        		<ul class="ctu">
+        			<li><a href="https://www.facebook.com/Trainocate-1224598267656077/"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+        			<li><a href="https://plus.google.com/104857456196761285469"><i class="fa fa-google-plus-official" aria-hidden="true"></i></li>
+        			<li><a href="https://www.instagram.com/trainocateindia/"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+        			<li><a href="https://twitter.com/TrainocateIndia"><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+        		</ul>
+        		<br>
+      </div>
+      <br>
+      <div class="maps">
+      		
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7209512278773!2d80.24852361469108!3d13.05342591660966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266177c5a5275%3A0x8e0169ec2fe224d0!2sTrainocate+Networks+India+Private+Limited+Chennai!5e0!3m2!1sen!2sin!4v1532686263712" width="100%" height="450" frameborder="0" style="border: 1px solid #555;" allowfullscreen></iframe>
+						</div>
+  </section>
+
+
+
+
+  <!---------------------------------------------------------Footer------------------------------------------------------------->
+  <div class="footer">
+  <p>&copy;Trainocate India Pvt Ltd.</p>
+</div>
+</div>
+<script src="js/particles.js"></script>
+<!--<script type="text/javascript" src="app.js"></script>-->
+<script type="text/javascript" src="js/app1.js"></script>
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+<script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+/*-------login and signup----------*/
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+var modal = document.getElementById('id02');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+      </script>
+      
+</body>
+</html>
