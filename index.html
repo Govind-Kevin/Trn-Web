@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
       <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+   
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script src="js/trn.js"></script>
 
@@ -21,23 +22,18 @@
       <div class="wrapper" id="wrapper">
             <header>
                   <nav>
-
                         <div class="menu-icon">
                               <i class="fa fa-bars fa-2x"></i>
                         </div>
-
-                        
-
                         <div class="menu" id="menu">
                               <ul>
                                     <li><a href="#home">Home</a></li>
-                                    <li><a href="#about">What We Do?</a></li>
-                                    <li><a href="#contact">Contact Us</a></li>
+                                    <li><a href="#about">What We Do</a></li>
+                                    <li><a href="#contact">Contact</a></li>
                               </ul>
                         </div>
                   </nav>
 							<div class="logo">
-
                               <div class="random">
                               	<span class="nbr ltr">0</span>
                               	<span class="nbr ltr">0</span>
@@ -173,15 +169,51 @@
         			<li><a href="https://www.facebook.com/Trainocate-1224598267656077/"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
         			<li><a href="https://plus.google.com/104857456196761285469"><i class="fa fa-google-plus-official" aria-hidden="true"></i></li>
         			<li><a href="https://www.instagram.com/trainocateindia/"><i class="fa fa-instagram" aria-hidden="true"></i></li>
-        			<li><a href="https://twitter.com/TrainocateIndia"><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+        			<li><a href="https://twitter.com/TrainocateIndia"><i class="fa fa-twitter-square" aria-hidden="true"></a></i></li>
         		</ul>
         		<br>
       </div>
       <br>
-      <div class="maps">
-      		
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7209512278773!2d80.24852361469108!3d13.05342591660966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266177c5a5275%3A0x8e0169ec2fe224d0!2sTrainocate+Networks+India+Private+Limited+Chennai!5e0!3m2!1sen!2sin!4v1532686263712" width="100%" height="450" frameborder="0" style="border: 1px solid #555;" allowfullscreen></iframe>
-						</div>
+      <center>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="cform" id="contact-form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+
+            <form action="" method="post" class="contactForm">
+
+              <div class="field your-name form-group">
+                <input type="text" name="name" placeholder="Your Name" class="cform-text" size="40" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                <div class="validation"></div>
+              </div>
+              <div class="field your-email form-group">
+                <input type="text" name="email" placeholder="Your Email" class="cform-text" size="40" data-rule="email" data-msg="Please enter a valid email">
+                <div class="validation"></div>
+              </div>
+              <div class="field subject form-group">
+                <input type="text" name="subject" placeholder="Subject" class="cform-text" size="40" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                <div class="validation"></div>
+              </div>
+
+              <div class="field message form-group">
+                <textarea name="message" class="cform-textarea" cols="40" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validation"></div>
+              </div>
+<br>
+              <div class="send-btn">
+                <input type="submit" value="SEND MESSAGE" class="btn btn-theme">
+              </div>
+<br>
+<br><br>
+            </form>
+          </div>
+        </div>
+        <!-- ./span12 -->
+      </div>
+
+    </div>
+</center>
   </section>
 
 
@@ -195,6 +227,8 @@
 <script src="js/particles.js"></script>
 <!--<script type="text/javascript" src="app.js"></script>-->
 <script type="text/javascript" src="js/app1.js"></script>
+<script src="js/contactform.js"></script>
+
       <script type="text/javascript">
 
       // Menu-toggle button
